@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "d702a4e2-8f60-4f74-809f-e323797321a5",
+		"name": "Pruebas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24470347",
+		"_collection_link": "https://gold-robot-235846.postman.co/workspace/Test-Bey~c72e17ab-ef47-467e-b3c7-8c93a7468829/collection/24470347-d702a4e2-8f60-4f74-809f-e323797321a5?action=share&creator=24470347&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Obtener lista",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/bey",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener producto por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/bey/15",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bey",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Equipo para recibir audio\",\r\n    \"name\": \"Audio BT\",\r\n    \"serialNumber\": 1025363662,\r\n    \"buyDate\": \"2020-07-25\",\r\n    \"buyValue\": 100000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/bey",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dar de baja product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/bey/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bey",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idProduct\": 11,\r\n    \"description\": \"Equipo para emitir audio\",\r\n    \"serialNumber\": 1025363562,\r\n    \"name\": \"Speaker BT\",\r\n    \"buyDate\": \"2021-07-25\",\r\n    \"buyValue\": 200000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/bey",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bey"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
